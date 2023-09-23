@@ -5,10 +5,16 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+body {
+    height: 120vh;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
 .header {
     background-color: #8d0000;
     box-shadow: 1px 1px 4px #8d0000;
-    height: 120px;
+    height: 150px;
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -21,7 +27,7 @@
 }
 
 .menu {
-    gap: 100px;
+    gap: 70px;
 }
 
 .menu a {
@@ -32,39 +38,213 @@
 
 .menu-button {
     color: white;
-    padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #a3222f;
+    border-radius: 20px;
 }
 
 .main {
-    background-color: white;
     color: black;
-    height: 100vh;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 4px solid yellow; */
+}
+
+.background-img {
+    background: url(Images/logo-ps.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,.5);
+    width: 100%;
+    height: 300px;
+    padding: 60px 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #B61827;
+    display: flex;
+    justify-content: center;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    flex-direction: column;
+}
+
+.text-img {
+    color: white;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    font-size: 25px;
+    line-height: 1.9;
 }
 
 .container {
-    margin: 50px;
+    width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: 20px;
+
+    /* border: 1px solid red; */
 }
 
 .resume {
     padding: 20px;
     width: 70%;
+    margin-right: 20px;
+    /* border: 1px solid blue; */
+}
+
+.resume-title {
+    padding: 0 0 25px 0;
+    font-size: 35px;
+    color: #8d0000;
+}
+
+.resume-text {
+    padding: 0 0 25px 0;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.resume-subtitle {
+    font-size: 35px;
+    color: #8d0000;
+    padding: 0 0 25px 0;
+    /* text-decoration: underline; */
+}
+
+.resume-subtext {
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .information {
+    position: relative;
     padding: 20px;
     width: 30%;
     background: #fefefe;
-    box-shadow: 1px 1px 5px rgba(1,1,1,0.3);
+    box-shadow: 1px 1px 10px rgba(1,1,1,0.3);
+
+    /* border: 1px solid black; */
+}
+
+.info-h1 {
+    color: #8d0000;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.info-plano {
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-plano li {
+    color: #8d0000;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.info-plano a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-plano a:hover {
+    color: red;
+    transition: 1s;
+}
+
+.info-plano {
+    padding-left: 10px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* border: 1px solid black; */
+}
+
+.info-align {
+    padding-left: 10px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* border: 1px solid black; */
+}
+
+.info-alexandre {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-alexandre img {
+    border-radius: 4000px;
+}
+
+.info-text-alexandre {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+.info-text-alexandre a {
+    color: #8d0000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.info-text-alexandre a:hover {
+    color: red;
+    transition: 1s;
+}
+
+.info-leandro {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-leandro img {
+    border-radius: 4000px;
+}
+
+.info-text-leandro {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+.info-text-leandro a{
+    color: #8d0000;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.info-text-leandro a:hover {
+    color: red;
+    transition: 1s;
 }
 
 .footer {
     position: relative;
     background-color: #8d0000;
     padding: 0 10%;
+    margin-top: 20px;
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -72,8 +252,9 @@
     justify-content: center;
 }
 
-.footer p {
+.text-footer {
     color: white;
     font-weight: bold;
     font-size: 15px;
+    line-height: 1.8;
 }
